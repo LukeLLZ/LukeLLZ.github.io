@@ -14,8 +14,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-            overflow: hidden; /* Hide scrollbars */
+            min-height: 100vh;
+            overflow: hidden;
         }
 
         img {
@@ -25,8 +25,14 @@
             height: auto;
             max-width: 300px;
             max-height: 200px;
-            margin-top: 350px; /* Add some top margin to separate the image from the footer */
+            margin-top: 350px;
         }
+
+        /* Media Query for screens smaller than 600px (typical mobile devices) */
+        @media (max-width: 600px) {
+            img {
+                margin-top: 100px; /* Adjust the top margin for mobile view */
+            }
         }
     </style>
 </head>
