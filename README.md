@@ -1,3 +1,3 @@
 # LukeLLZ.github.io
-#LukeLZ.com
+LukeLZ.com
 Testing HTML
