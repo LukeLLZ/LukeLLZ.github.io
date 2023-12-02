@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke LZ</title>
+    <title>Luke LZ - Coming Soon</title>
+	<link rel="icon" href="LZLogoRound.ico" type="image/x-icon">
     <style>
         body {
-            background-color: #000;
+            background-color: #000000;
             color: #fff;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
-            overflow: hidden;
+            justify-content: center; /* Center content vertically */
+            height: 100vh; /* Use full viewport height */
+            overflow: hidden; /* Hide scrollbars */
         }
 
         img {
@@ -23,19 +25,27 @@
             max-height: 100%;
             width: auto;
             height: auto;
-            max-width: 300px;
-            max-height: 200px;
-            margin-top: 225px;
+            max-width: 500px; /* Enlarged image size */
+            max-height: 350px; /* Enlarged image size */
+            margin-top: 10px; /* Adjusted margin for the image */
         }
-
+		
         @media (max-width: 600px) {
             img {
-                margin-top: 225px;
+                margin-top: -25px;
             }
         }
+		
     </style>
 </head>
+	
 <body>
     <img src="LZLogo.png" alt="Centered Image">
+
+    <div class="title-text">
+
+    </div>
+
 </body>
+	
 </html>
