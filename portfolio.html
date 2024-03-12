@@ -3,89 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke LZ - Portfolio</title>
-    <link rel="icon" href="LZLogoWhiteIcon.ico" type="image/x-icon">
+    <title>Black Page</title>
     <style>
         body {
-            background-color: #000000;
-            color: #fff;
             margin: 0;
             padding: 0;
+            background-color: black;
+            color: white; /* text color */
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Center content vertically */
-            height: 100vh; /* Use full viewport height */
-            overflow: hidden; /* Hide scrollbars */
-            position: relative;
+            height: 100vh; /* make sure content fills the entire screen height */
         }
-
-        .container {
+        .header {
             text-align: center;
-            position: relative;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999; /* ensure header is on top */
         }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            max-width: 100%; /* Ensure image is always within the viewport width */
-            max-height: calc(100vh - 140px); /* Adjusted image size for the viewport */
-            margin-top: 10px; /* Adjusted margin for the image */
-            cursor: pointer; /* Change cursor to pointer on hover */
-            z-index: 1; /* Ensure image is below other elements */
+        .header a {
+            display: inline-block;
+            text-decoration: none;
+            color: white; /* link color */
         }
-
-        .logo-container {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2; /* Ensure logo is above other elements */
+        .header img {
+            max-width: 200px; /* adjust as needed */
+            max-height: 100px; /* adjust as needed */
         }
-
-        .logo-container img {
-            width: 50px; /* Set width to 100px */
-            height: 50px; /* Set height to 100px */
+        .content {
+            padding: 20px;
+            text-align: center;
+            margin-top: 150px; /* adjust the distance from the top as needed */
         }
-
-        .title-text {
-            margin-top: 20px; /* Adjust margin for the title */
-            font-size: 24px;
+        .content img {
+            max-width: 854px; /* adjust as needed */
+            max-height: 480px; /* adjust as needed */
+            margin: 0 auto; /* center the image horizontally */
         }
-
-        .image-description {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-
-        @media (max-width: 600px) {
-            .logo-container {
-                top: 30px; /* Adjust top position for smaller screens */
-            }
-
-            img {
-                margin-top: 20px; /* Adjust margin for the image */
-            }
+        .body-content {
+            text-align: center;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <a href="https://www.lukelz.com">
-                <img src="LZ_Logo_Transparent_White.png" alt="Logo">
-            </a>
-        </div>
-
-        <a>
-            <img src="CartoonBoxing1.png" alt="Centered Image">
+    <div class="header">
+        <a href="index.html">
+            <img src="LZ_Logo_Transparent_White.png" alt="Your Logo">
         </a>
-        <div class="title-text">
-            | LZ Muay Thai Game Enviroment Coming Soon |
-        </div>
+    </div>
+    <div class="content">
+        <img src="CartoonBoxing1.png" alt="Image 1">
+    </div>
+    <div class="body-content">
+        <p>Cartoonish Muay Thai/Boxing Gym Enviroment</p>
     </div>
 </body>
 </html>
