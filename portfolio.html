@@ -17,6 +17,7 @@
             justify-content: center; /* Center content vertically */
             height: 100vh; /* Use full viewport height */
             overflow: hidden; /* Hide scrollbars */
+            position: relative;
         }
 
         img {
@@ -24,22 +25,41 @@
             max-height: 100%;
             width: auto;
             height: auto;
-            max-width: 1280px; /* Enlarged image size */
+            max-width: 640px; /* Enlarged image size */
             max-height: 720px; /* Enlarged image size */
             margin-top: 10px; /* Adjusted margin for the image */
             cursor: pointer; /* Change cursor to pointer on hover */
+            z-index: 1; /* Ensure image is below other elements */
         }
-        
+
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2; /* Ensure logo is above other elements */
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: 100px;
+        }
+
         @media (max-width: 600px) {
             img {
                 margin-top: -125px;
             }
         }
-        
     </style>
 </head>
 
 <body>
+    <div class="logo-container">
+        <a href="Index.html">
+            <img src="LZLogo.png" alt="Logo">
+        </a>
+    </div>
+
     <a href="Index.html">
         <img src="CartoonBoxing1.png" alt="Centered Image">
     </a>
@@ -47,6 +67,5 @@
     <div class="title-text">
 
     </div>
-
 </body>
 </html>
