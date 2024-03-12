@@ -20,13 +20,18 @@
             position: relative;
         }
 
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
         img {
             max-width: 100%;
             max-height: 100%;
             width: auto;
             height: auto;
-            max-width: 640px; /* Enlarged image size */
-            max-height: 720px; /* Enlarged image size */
+            max-width: 100%; /* Ensure image is always within the viewport width */
+            max-height: calc(100vh - 140px); /* Adjusted image size for the viewport */
             margin-top: 10px; /* Adjusted margin for the image */
             cursor: pointer; /* Change cursor to pointer on hover */
             z-index: 1; /* Ensure image is below other elements */
@@ -45,31 +50,38 @@
             height: 100px;
         }
 
+        .title-text {
+            margin-top: 20px; /* Adjust margin for the title */
+            font-size: 24px;
+        }
+
         @media (max-width: 600px) {
             .logo-container {
                 top: 20px; /* Adjust top position for smaller screens */
             }
 
             img {
-                margin-top: 125px; /* Adjust margin for the image */
+                margin-top: 20px; /* Adjust margin for the image */
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="logo-container">
+    <div class="container">
+        <div class="logo-container">
+            <a href="Index.html">
+                <img src="LZLogo.png" alt="Logo">
+            </a>
+        </div>
+
         <a href="Index.html">
-            <img src="LZLogo.png" alt="Logo">
+            <img src="CartoonBoxing1.png" alt="Centered Image">
         </a>
-    </div>
 
-    <a href="Index.html">
-        <img src="CartoonBoxing1.png" alt="Centered Image">
-    </a>
-
-    <div class="title-text">
-
+        <div class="title-text">
+            Your Title Here
+        </div>
     </div>
 </body>
 </html>
