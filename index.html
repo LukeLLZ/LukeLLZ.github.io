@@ -11,27 +11,46 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Center content vertically */
+            position: relative; /* Added position relative for absolute positioning */
             height: 100vh; /* Use full viewport height */
             overflow: hidden; /* Hide scrollbars */
         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
+        header {
+            text-align: center; /* Center header text */
+            margin-bottom: 20px; /* Add some space below header */
+        }
+
+        .img_logo {
+            position: absolute; /* Position absolutely */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust for half of its own size */
             max-width: 500px; /* Enlarged image size */
-            max-height: 350px; /* Enlarged image size */
-            margin-top: 10px; /* Adjusted margin for the image */
+            max-height: 500px; /* Enlarged image size */
             cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        .footer-img {
+            max-width: 50px; /* Set maximum width for footer images */
+            max-height: 50px; /* Set maximum height for footer images */
+        }
+
+        footer {
+            position: absolute; /* Position absolutely */
+            bottom: 50px; /* Add some space above footer */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center footer horizontally */
+            display: flex;
+            justify-content: center; /* Center social media icons horizontally */
+        }
+
+        footer a {
+            margin: 0 10px; /* Add space between social media icons */
         }
         
         @media (max-width: 600px) {
-            img {
+            .img_logo {
                 margin-top: -125px;
             }
         }
@@ -40,13 +59,20 @@
 </head>
 
 <body>
+    <header>
+        <h1>   </h1>
+    </header>
+
     <a href="portfolio.html">
-        <img src="LZLogo.png" alt="Centered Image">
+        <img class="img_logo" src="LZLogo.png" alt="Centered Image">
     </a>
 
-    <div class="title-text">
-
-    </div>
+    <footer>
+        <a href="https://www.instagram.com/lukelz/"><img class="footer-img" src="White_Instagram_Logo.png" alt="Social Media Icon 1"></a>
+        <a href="https://www.youtube.com/channel/UCIGUkTwm8NS38IR2noPi_5A"><img class="footer-img" src="White_Youtube_Logo.png" alt="Social Media Icon 2"></a>
+        <a href="https://www.twitch.tv/lztvlive"><img class="footer-img" src="White_Twitch_Logo.png" alt="Social Media Icon 3"></a>
+        <!-- Add more social media icons as needed -->
+    </footer>
 
 </body>
 </html>
