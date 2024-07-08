@@ -11,61 +11,61 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            position: relative; /* Added position relative for absolute positioning */
-            height: 100vh; /* Use full viewport height */
-            overflow: hidden; /* Hide scrollbars */
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
         }
 
         header {
-            text-align: center; /* Center header text */
-            margin-bottom: 10px; /* Add some space below header */
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .img_logo {
-            position: absolute; /* Position absolutely */
-            top: 40%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Adjust for half of its own size */
-            max-width: 500px; /* Enlarged image size */
-            max-height: 500px; /* Enlarged image size */
-            cursor: pointer; /* Change cursor to pointer on hover */
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 500px;
+            max-height: 500px;
+            cursor: pointer;
         }
 
         .footer-img {
-            max-width: 50px; /* Set maximum width for footer images */
-            max-height: 50px; /* Set maximum height for footer images */
+            max-width: 50px;
+            max-height: 50px;
         }
 
         footer {
-            position: absolute; /* Position absolutely */
-            bottom: 50px; /* Add some space above footer */
-            left: 50%; /* Center horizontally */
-			transform: translateX(-50%); /* Move the footer back by half of its own width */
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+			transform: translateX(-50%);
             display: flex;
-            justify-content: center; /* Center social media icons horizontally */
+            justify-content: center;
         }
 
         footer a {
-            margin: 0 10px; /* Add space between social media icons */
-            left: 50%; /* Center horizontally */
-            right:50%; /* Center horizontally */
+            margin: 0 10px;
+            left: 50%;
+            right:50%;
 		
         }
         
         @media (max-width: 500px) {
             .img_logo {
             margin-top: 0x;
-            position: absolute; /* Position absolutely */
-            top: 30%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Adjust for half of its own size */
-            max-width: 250px; /* Enlarged image size */
-            max-height: 250px; /* Enlarged image size */
-            cursor: pointer; /* Change cursor to pointer on hover */
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 250px;
+            max-height: 250px; 
+            cursor: pointer;
             }
 	    footer {
-            position: fixed; /* Position fixed at the bottom */
-            width: 100%; /* Occupy full width */
+            position: fixed;
+            width: 100%;
         }
         }
         
@@ -85,7 +85,6 @@
         <a href="https://github.com/LukeLLZ"><img class="footer-img" src="White_Instagram_Logo.png" alt="Social Media Icon 1"></a>
         <a href="https://www.youtube.com/channel/UCIGUkTwm8NS38IR2noPi_5A"><img class="footer-img" src="White_Youtube_Logo.png" alt="Social Media Icon 2"></a>
         <a href="https://www.twitch.tv/lztvlive"><img class="footer-img" src="White_Twitch_Logo.png" alt="Social Media Icon 3"></a>
-        <!-- Add more social media icons as needed -->
     </footer>
 
 </body>
